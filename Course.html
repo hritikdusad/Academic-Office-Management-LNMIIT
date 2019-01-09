@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Course</title>
+    <meta name="description" content="Academic">
+</head>
+<style type="text/css"> 
+
+	body{
+		text-align:center;
+		font-family: Arial, Helvetica, sans-serif;
+        background-color: #C0C0C0;
+        
+	}
+	.Srch {
+		width:250px;
+		padding:11px;
+		margin-left:35%;
+		margin-top:10%;
+		cursor: pointer;
+        border: 2px double Black;
+        border-radius: 16px;
+        font-size: 16px;
+        
+	}
+	.Srch input{
+    outline: black;
+	border:0px;
+	box-shadow: none;
+	color:Black;
+	float:right;
+	}
+	.label{
+	float:left;
+	}
+	
+</style>
+<body>
+	<br><br><br>
+	<div class="container Srch">
+		<form action="Course.jsp" method="post"><span class="label">
+  		Course Code:</span> <input type="search" name="CourseCode" class="searchB">
+  		<br>
+  		<br>
+  		<br>
+  		<span class="label">
+  		Batch:</span> <input type="search" name="batch" class="searchB">
+  		<br>
+  		<br>
+  		<br>
+  		<input type="submit" value="Search" class="btn btn-primary" align ="center">
+		</form>
+
+	</div>
+	</body>
+	
