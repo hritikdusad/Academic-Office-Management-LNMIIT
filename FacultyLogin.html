@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Faculty Login</title>
+    <meta name="description" content="Academic">
+  </head>
+
+  <style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #C0C0C0;
+        text-align:center;
+    }
+    form {
+        border: 0px solid #f1f1f1; 
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: 30%;
+        margin-right: 30%;
+        }
+
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 18px;
+        margin: 2px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+    label {
+        padding: 5px;
+    }
+    button {
+        background-color: #292929;
+        color: #BABABA;
+        padding: 12px 20px;
+        margin: 6px 0;
+        border: none;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        width: 100%;
+        border-radius: 14px;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+
+    .container {
+        padding: 16px;
+    }
+
+    span.psw {
+        float: right;
+        padding-top: 18px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    
+    }
+</style>
+
+
+
+  <body>
+    <!--LOGIN-->
+    <h2>Administrator</h2>
+     <form action="facultylogin.jsp" method="post">
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="userid" required>
+		<br><br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+		<br><br>
+        <button type="submit">Login</button>
+    
+        <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container">
+        <span class="psw" style="width:auto;"><a href="#" onclick="alert('Contact IT Support')">Forgot password?</a></span>
+      </div>
+     </form> 
+      
+  </body>
